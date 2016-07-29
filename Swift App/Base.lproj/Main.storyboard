@@ -29,17 +29,37 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rri-UQ-wqg"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kyG-CI-Wpi">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5V4-0N-2sG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDB-RL-V3P">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ERl-Vl-Kl2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TQA-aD-sY8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="A2H-e5-ITI"/>
+                            <constraint firstItem="LDB-RL-V3P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LFC-7a-wOK"/>
+                            <constraint firstItem="LDB-RL-V3P" firstAttribute="top" secondItem="kyG-CI-Wpi" secondAttribute="bottom" constant="8" id="Ref-c7-uVm"/>
                             <constraint firstItem="8MF-St-zzp" firstAttribute="top" secondItem="TQA-aD-sY8" secondAttribute="bottom" constant="25" id="hMA-AY-ijc"/>
                             <constraint firstItem="8MF-St-zzp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hjq-8C-77J"/>
+                            <constraint firstItem="kyG-CI-Wpi" firstAttribute="top" secondItem="8MF-St-zzp" secondAttribute="bottom" constant="8" id="nVm-hd-6bl"/>
+                            <constraint firstItem="kyG-CI-Wpi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJY-fw-QwG"/>
                             <constraint firstItem="TQA-aD-sY8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uYF-Hn-8Ll"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="TQA-aD-sY8" id="tSz-ar-IIX"/>
+                        <outlet property="text1" destination="kyG-CI-Wpi" id="igF-mO-WKY"/>
+                        <outlet property="text2" destination="LDB-RL-V3P" id="LOO-xT-g7L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
